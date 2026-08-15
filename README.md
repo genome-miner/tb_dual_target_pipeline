@@ -414,7 +414,7 @@ Biotechnologist and Bioinformatician
 
 ## ⭐ Support the Project
 
-_If you found this repository useful, consider giving it a **star** on GitHub._
+_If you found this repository useful, whether for its methodology, results, or as a reference for your own TB target-discovery work, consider giving it a **star**._
 
 _Thank you for visiting!_
 </div>
