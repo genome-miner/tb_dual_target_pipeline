@@ -253,7 +253,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a href="#part-2-vaccine-target-identification">Part 2: Vaccine Target Identification</a>
+## <a id="part-2-vaccine-target-identification"></a>💉 Part 2: Vaccine Target Identification
 
 A five-step screening pipeline was applied to identify, then validate, candidate linear B-cell epitopes: prediction (A), antigenicity (B), allergenicity (C), toxicity (D), and conservation (E).
 
@@ -268,8 +268,6 @@ A five-step screening pipeline was applied to identify, then validate, candidate
 | Rv1258c | 0 | 0 | 0 |
 
 **Interpretation:** InhA has one experimentally validated T-cell epitope (RLPAKAPLL, supported by 21 MHC ligand binding assays and 2 solved crystal structures) but no B-cell epitope data — motivating this project's B-cell prediction. DprE1 and Rv1258c have zero IEDB entries of any kind, confirming their predictions here are genuinely novel.
-
-<br>
 
 ---
 
