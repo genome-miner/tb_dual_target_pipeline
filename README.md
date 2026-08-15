@@ -24,6 +24,7 @@
 - <a href="#project-overview">Project Overview</a>
 - <a href="#targets-selected">Targets Selected</a>
 - <a href="#repository-structure">Repository Structure</a>
+- <a href="#pipeline-overview">Pipeline Overview</a>
 - <a href="#part-1-drug-repurposing-molecular-docking">Part 1: Drug Repurposing — Molecular Docking</a>
 - <a href="#part-2-iedb-known-epitope-search">Part 2: IEDB Known-Epitope Search</a>
 - <a href="#part-3-b-cell-epitope-prediction-bepipred-30">Part 3: B-Cell Epitope Prediction — BepiPred-3.0</a>
@@ -59,6 +60,26 @@ Tuberculosis remains a leading global infectious killer, with rising multidrug-r
 ---
 
 ## <a id="repository-structure"></a>📁 Repository Structure
+
+```bash
+tb-dual-target-pipeline/
+├── Proteins/
+├── Prepared_proteins/
+├── Drugs/
+├── Docking/
+│   ├── InhA_docking/
+│   ├── DprE1_docking/
+│   └── Rv1258c_docking/
+├── Epitope/
+│   ├── InhA_protein/
+│   ├── Rv1258c_protein/
+│   └── Toxicity/
+├── README.md
+└── LICENSE
+```
+
+<details>
+<summary>Click to expand full structure</summary>
 
 ```bash
 tb-dual-target-pipeline/
@@ -171,6 +192,25 @@ tb-dual-target-pipeline/
 │
 ├── README.md
 └── LICENSE
+```
+
+</details>
+
+---
+
+## 🔄 Pipeline Overview
+
+```mermaid
+flowchart TD
+    A[Target Selection<br/>InhA · DprE1 · Rv1258c] --> B[Molecular Docking<br/>Drug Repurposing]
+    A --> C[IEDB Known-Epitope Search]
+    C --> D[BepiPred-3.0<br/>B-Cell Epitope Prediction]
+    D --> E[VaxiJen<br/>Antigenicity]
+    E --> F[AllerTOP + AllerCatPro 2.0<br/>Allergenicity]
+    F --> G[CSM-Toxin<br/>Toxicity]
+    G --> H[BLASTp<br/>Conservation]
+    B --> I[Dual-Purpose Target<br/>Integration]
+    H --> I
 ```
 
 ---
