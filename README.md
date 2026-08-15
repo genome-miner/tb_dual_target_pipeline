@@ -25,17 +25,18 @@
 - <a href="#targets-selected">Targets Selected</a>
 - <a href="#repository-structure">Repository Structure</a>
 - <a href="#pipeline-overview">Pipeline Overview</a>
+- <a href="#tools--databases">Tools & Databases</a>
 - <a href="#part-1-drug-repurposing-molecular-docking">Part 1: Drug Repurposing — Molecular Docking</a>
-- <a href="#part-2-iedb-known-epitope-search">Part 2: IEDB Known-Epitope Search</a>
-- <a href="#A-b-cell-epitope-prediction-bepipred-30">A: B-Cell Epitope Prediction — BepiPred-3.0</a>
-- <a href="#B-antigenicity-vaxijen">B: Antigenicity — VaxiJen</a>
-- <a href="#C-allergenicity-allertop--allercatpro-20">C: Allergenicity — AllerTOP & AllerCatPro 2.0</a>
-- <a href="#D-toxicity-csm-toxin">D: Toxicity — CSM-Toxin</a>
-- <a href="#E-conservation-blastp">E: Conservation — BLASTp</a>
+- <a href="#part-2-vaccine-target-identification">Part 2: Vaccine Target Identification</a>
+  - <a href="#part-2-a-iedb-known-epitope-search">A: IEDB Known-Epitope Search</a>
+  - <a href="#part-2-b-cell-epitope-prediction-bepipred-30">B: Epitope Prediction — BepiPred-3.0</a>
+  - <a href="#part-2-c-antigenicity-vaxijen">C: Antigenicity — VaxiJen</a>
+  - <a href="#part-2-d-allergenicity-allertop--allercatpro-20">D: Allergenicity — AllerTOP & AllerCatPro 2.0</a>
+  - <a href="#part-2-e-toxicity-csm-toxin">E: Toxicity — CSM-Toxin</a>
+  - <a href="#part-2-f-conservation-blastp">F. Conservation — BLASTp</a>
 - <a href="#final-results">Final Results</a>
 - <a href="#key-finding">Key Finding</a>
 - <a href="#limitations">Limitations</a>
-- <a href="#tools--databases">Tools & Databases</a>
 - <a href="#future-work">Future Work</a>
 - <a href="#references">References</a>
 - <a href="#license">License</a>
@@ -220,6 +221,18 @@ flowchart LR
 
 ---
 
+## <a id="tools--databases"></a>🛠️ Tools & Databases
+
+| Category | Tools & Databases |
+|---|---|
+| 🧬 **Molecular Docking** | AutoDock Vina · Discovery Studio Visualizer · UCSF ChimeraX |
+| 🦠 **Epitope Analysis** | IEDB · BepiPred-3.0 |
+| 🧪 **Antigenicity** | VaxiJen v2.0 |
+| ⚠️ **Allergenicity & Toxicity** | AllerTOP v2.0 · AllerCatPro 2.0 · CSM-Toxin |
+| 🔬 **Sequence Analysis** | NCBI BLASTp · UniProt |
+
+---
+
 ## <a id="part-1-drug-repurposing-molecular-docking"></a>💊 Part 1: Drug Repurposing — Molecular Docking
 
 **Tool:** AutoDock Vina | **Validation:** Discovery Studio Visualizer (2D/3D), UCSF ChimeraX (H-bond/clash verification)
@@ -240,7 +253,13 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a id="part-2-iedb-known-epitope-search"></a>🗄️ Part 2: IEDB Known-Epitope Search
+## <a href="#part-2-vaccine-target-identification">Part 2: Vaccine Target Identification</a>
+
+A five-step screening pipeline was applied to identify, then validate, candidate linear B-cell epitopes: prediction (A), antigenicity (B), allergenicity (C), toxicity (D), and conservation (E).
+
+---
+
+## <a id="part-2-a-iedb-known-epitope-search"></a>🗄️ A: IEDB Known-Epitope Search
 
 | Target | B-cell Epitopes | T-cell Epitopes | MHC Binders |
 |---|---|---|---|
@@ -250,9 +269,11 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 **Interpretation:** InhA has one experimentally validated T-cell epitope (RLPAKAPLL, supported by 21 MHC ligand binding assays and 2 solved crystal structures) but no B-cell epitope data — motivating this project's B-cell prediction. DprE1 and Rv1258c have zero IEDB entries of any kind, confirming their predictions here are genuinely novel.
 
+<br>
+
 ---
 
-## <a id="A-b-cell-epitope-prediction-bepipred-30"></a>🧫 A: B-Cell Epitope Prediction — BepiPred-3.0
+## <a id="part-2-b-cell-epitope-prediction-bepipred-30"></a>🧫 B: Epitope Prediction — BepiPred-3.0
 
 **Threshold:** 0.1512 (default) | **Score used:** raw `BepiPred-3.0 score` | **Rule:** strict consecutive residues ≥5 aa | **Verification:** cross-checked against official server FASTA — 0 mismatches (InhA 269/269, Rv1258c 419/419)
 
@@ -268,7 +289,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a id="B-antigenicity-vaxijen"></a>🧪 B: Antigenicity — VaxiJen
+## <a id="part-2-c-antigenicity-vaxijen"></a>🧪 C: Antigenicity — VaxiJen
 
 **Model:** Bacteria | **Threshold:** 0.5
 
@@ -283,7 +304,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a id="C-allergenicity-allertop--allercatpro-20"></a>🌾 C: Allergenicity — AllerTOP & AllerCatPro 2.0
+## <a id="part-2-d-allergenicity-allertop--allercatpro-20"></a>🌾 D: Allergenicity — AllerTOP & AllerCatPro 2.0
 
 | Epitope | AllerTOP v2.0 | AllerCatPro 2.0 (E<0.001) | Final |
 |---|---|---|---|
@@ -295,7 +316,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a id="D-toxicity-csm-toxin"></a>☠️ D: Toxicity — CSM-Toxin
+## <a id="part-2-e-toxicity-csm-toxin"></a>☠️ E: Toxicity — CSM-Toxin
 
 **Threshold:** 0.5
 
@@ -309,7 +330,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a id="E-conservation-blastp"></a>🌍 E: Conservation — BLASTp
+## <a id="part-2-f-conservation-blastp"></a>🌍 F. Conservation — BLASTp
 
 | Epitope | Identity | E-value | Combined Members |
 |---|---|---|---|
@@ -345,12 +366,6 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 - Small sample size (3 proteins), appropriate for mini-project scope
 - Docking scores alone are not proof of binding — demonstrated directly by the excluded Thioridazine–InhA result
 - Metformin (InhA/DprE1) and disulfiram (DprE1) pairings are novel hypotheses, not literature-confirmed mechanisms
-
----
-
-## <a id="tools--databases"></a>🛠️ Tools & Databases
-
-AutoDock Vina · Discovery Studio Visualizer · UCSF ChimeraX · IEDB · BepiPred-3.0 · VaxiJen v2.0 · AllerTOP v2.0 · AllerCatPro 2.0 · CSM-Toxin · NCBI BLASTp · UniProt
 
 ---
 
