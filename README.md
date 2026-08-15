@@ -226,7 +226,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 | Isoniazid | InhA + NADH | −4.9 | 3 H-bonds (NADH, GLY96); Pi-Alkyl (MET199) | Benchmark |
 | Ethionamide | InhA + NADH | −5.1 | H-bond (NADH); Pi-Sulfur, Alkyl (MET199, PHE149, TYR158, ALA198) | Benchmark |
 | Metformin | InhA + NADH | −5.0 | 2 H-bonds (NADH); Charge–Charge | Repurposing |
-| Metformin | DprE1 + FAD | −5.2 | H-bond (TYR314); Carbon-H-bond (FAD); ⚠️ clash (LYS134) | Repurposing |
+| Metformin | DprE1 + FAD | −5.2 | H-bond (TYR314); Carbon-H-bond (FAD); clash (LYS134) | Repurposing |
 | Disulfiram | DprE1 + FAD | −5.2 | Alkyl/Pi-Alkyl network (LEU363/317, FAD, HIS132, LYS134, VAL365) | Repurposing |
 | Thioridazine | InhA + NADH | −7.5 | 0 H-bonds, 0 clashes (ChimeraX) | ❌ Excluded |
 | Thioridazine | Rv1258c | −8.2 | Carbon-H-bond, Pi-Sigma, Pi-Alkyl (ALA48/110/113/114, ILE27, THR51, LEU55, TYR357) | ✅ **Flagship** |
