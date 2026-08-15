@@ -2,7 +2,7 @@
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:1A2980,100:26D0CE&height=15&section=header&width=2000"/>
 </p>
 
-## 🧬 TB-DualTarget: Integrated Computational Pipeline for Drug Repurposing and B-Cell Vaccine Epitope Prediction in *Mycobacterium tuberculosis*
+# TB-DualTarget: Integrated Computational Pipeline for Drug Repurposing and B-Cell Vaccine Epitope Prediction in *Mycobacterium tuberculosis*
 
 ### Dual-Purpose Target Discovery via Molecular Docking, Immunoinformatics, and Cross-Database Validation
 
@@ -38,6 +38,7 @@
 - <a href="#future-work">Future Work</a>
 - <a href="#references">References</a>
 - <a href="#license">License</a>
+- <a href="#author--contact">Author & Contact</a>
 
 ---
 
