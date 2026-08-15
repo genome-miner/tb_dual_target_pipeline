@@ -98,10 +98,10 @@ tb-dual-target-pipeline/
 │   └── Rv1258c_prepared.pdb
 │
 ├── Drugs/
-│   ├── isoniazid.pdb
-│   ├── isoniazid.png
-│   ├── ethionamide.pdb
-│   ├── ethionamide.png
+│   ├── Isoniazid.pdb
+│   ├── Isoniazid.png
+│   ├── Ethionamide.pdb
+│   ├── Ethionamide.png
 │   ├── Metformin.pdb
 │   ├── Metformin.png
 │   ├── Disulfiram.pdb
@@ -112,11 +112,12 @@ tb-dual-target-pipeline/
 ├── Docking/
 │   │
 │   ├── InhA_docking/
+│   │   ├── InhA_prepared.pdbqt
 │   │   ├── InhA_NADH_with_isoniazid/
 │   │   │   ├── InhA_isoniazid_docked.pdb
 │   │   │   ├── isoniazid_InhA_out.pdbqt
 │   │   │   ├── isoniazid_minimized.pdbqt
-│   │   │   ├── docking.png
+│   │   │   ├── Docking.png
 │   │   │   ├── Result.png
 │   │   │   ├── 2D_isoniazid.png
 │   │   │   └── 3D_isoniazid.png
@@ -125,7 +126,7 @@ tb-dual-target-pipeline/
 │   │   │   ├── InhA_ethionamide_docked.pdb
 │   │   │   ├── ethionamide_InhA_out.pdbqt
 │   │   │   ├── ethionamide_minimized.pdbqt
-│   │   │   ├── docking.png
+│   │   │   ├── Docking.png
 │   │   │   ├── Result.png
 │   │   │   ├── 2D_ethionamide.png
 │   │   │   └── 3D_ethionamide.png
@@ -140,6 +141,7 @@ tb-dual-target-pipeline/
 │   │       └── 3D_metformin.png
 │   │
 │   ├── DprE1_docking/
+│   │   ├── DprE1_prepared.pdbqt
 │   │   ├── DprE1_FAD_with_metformin/
 │   │   │   ├── DprE1_metformin_docked.pdb
 │   │   │   ├── metformin_DprE1_out.pdbqt
@@ -153,6 +155,7 @@ tb-dual-target-pipeline/
 │   │       ├── DprE1_disulfiram_docked.pdb
 │   │       ├── disulfiram_DprE1_out.pdbqt
 │   │       ├── disulfiram_minimized.pdbqt
+│   │       ├── Docking.png
 │   │       ├── Result.png
 │   │       ├── 2D_disulfiram.png
 │   │       └── 3D_disulfiram.png
@@ -161,9 +164,11 @@ tb-dual-target-pipeline/
 │       ├── Rv1258c_thioridazine_docked.pdb
 │       ├── thioridazine_Rv1258c_out.pdbqt
 │       ├── thioridazine_minimized.pdbqt
+│       ├── Rv1258c_prepared.pdbqt
+│       ├── Docking.png
 │       ├── Result.png
-│       ├── 2D_Rv1258c.png
-│       └── 3D_Rv1258c.png
+│       ├── 2D_thioridazine.png
+│       └── 3D_thioridazine.png
 │
 ├── Epitope/
 │   │
@@ -188,7 +193,7 @@ tb-dual-target-pipeline/
 │   │       └── Result_GKPHHTSRPQ.png
 │   │
 │   └── Toxicity/
-│       └── results.csv
+│       └── Results.csv
 │
 ├── README.md
 └── LICENSE
