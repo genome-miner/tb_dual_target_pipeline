@@ -113,68 +113,68 @@ tb-dual-target-pipeline/
 │   │
 │   ├── InhA_docking/
 │   │   ├── InhA_prepared.pdbqt
-│   │   ├── InhA_NADH_with_isoniazid/
-│   │   │   ├── InhA_isoniazid_docked.pdb
-│   │   │   ├── isoniazid_InhA_out.pdbqt
-│   │   │   ├── isoniazid_minimized.pdbqt
+│   │   ├── InhA_NADH_with_Isoniazid/
+│   │   │   ├── InhA_Isoniazid_Docked.pdb
+│   │   │   ├── Isoniazid_InhA_out.pdbqt
+│   │   │   ├── Isoniazid_minimized.pdbqt
 │   │   │   ├── Docking.png
 │   │   │   ├── Result.png
-│   │   │   ├── 2D_isoniazid.png
-│   │   │   └── 3D_isoniazid.png
+│   │   │   ├── 2D_Isoniazid.png
+│   │   │   └── 3D_Isoniazid.png
 │   │   │
-│   │   ├── InhA_NADH_with_ethionamide/
-│   │   │   ├── InhA_ethionamide_docked.pdb
-│   │   │   ├── ethionamide_InhA_out.pdbqt
-│   │   │   ├── ethionamide_minimized.pdbqt
+│   │   ├── InhA_NADH_with_Ethionamide/
+│   │   │   ├── InhA_Ethionamide_Docked.pdb
+│   │   │   ├── Ethionamide_InhA_out.pdbqt
+│   │   │   ├── Ethionamide_minimized.pdbqt
 │   │   │   ├── Docking.png
 │   │   │   ├── Result.png
-│   │   │   ├── 2D_ethionamide.png
-│   │   │   └── 3D_ethionamide.png
+│   │   │   ├── 2D_Ethionamide.png
+│   │   │   └── 3D_Ethionamide.png
 │   │   │
-│   │   └── InhA_NADH_with_metformin/
-│   │       ├── InhA_metformin_docked.pdb
-│   │       ├── metformin_InhA_out.pdbqt
-│   │       ├── metformin_minimized.pdbqt
+│   │   └── InhA_NADH_with_Metformin/
+│   │       ├── InhA_Metformin_Docked.pdb
+│   │       ├── Metformin_InhA_out.pdbqt
+│   │       ├── Metformin_minimized.pdbqt
 │   │       ├── Docking.png
 │   │       ├── Result.png
-│   │       ├── 2D_metformin.png
-│   │       └── 3D_metformin.png
+│   │       ├── 2D_Metformin.png
+│   │       └── 3D_Metformin.png
 │   │
 │   ├── DprE1_docking/
 │   │   ├── DprE1_prepared.pdbqt
-│   │   ├── DprE1_FAD_with_metformin/
-│   │   │   ├── DprE1_metformin_docked.pdb
-│   │   │   ├── metformin_DprE1_out.pdbqt
-│   │   │   ├── metformin_minimized.pdbqt
+│   │   ├── DprE1_FAD_with_Metformin/
+│   │   │   ├── DprE1_Metformin_Docked.pdb
+│   │   │   ├── Metformin_DprE1_out.pdbqt
+│   │   │   ├── Metformin_minimized.pdbqt
 │   │   │   ├── Docking.png
 │   │   │   ├── Result.png
-│   │   │   ├── 2D_metformin.png
-│   │   │   └── 3D_metformin.png
+│   │   │   ├── 2D_Metformin.png
+│   │   │   └── 3D_Metformin.png
 │   │   │
-│   │   └── DprE1_FAD_with_disulfiram/
-│   │       ├── DprE1_disulfiram_docked.pdb
-│   │       ├── disulfiram_DprE1_out.pdbqt
-│   │       ├── disulfiram_minimized.pdbqt
+│   │   └── DprE1_FAD_with_Disulfiram/
+│   │       ├── DprE1_Disulfiram_Docked.pdb
+│   │       ├── Disulfiram_DprE1_out.pdbqt
+│   │       ├── Disulfiram_minimized.pdbqt
 │   │       ├── Docking.png
 │   │       ├── Result.png
-│   │       ├── 2D_disulfiram.png
-│   │       └── 3D_disulfiram.png
+│   │       ├── 2D_Disulfiram.png
+│   │       └── 3D_Disulfiram.png
 │   │
 │   └── Rv1258c_docking/
-│       ├── Rv1258c_thioridazine_docked.pdb
-│       ├── thioridazine_Rv1258c_out.pdbqt
-│       ├── thioridazine_minimized.pdbqt
+│       ├── Rv1258c_Thioridazine_Docked.pdb
+│       ├── Thioridazine_Rv1258c_out.pdbqt
+│       ├── Thioridazine_minimized.pdbqt
 │       ├── Rv1258c_prepared.pdbqt
 │       ├── Docking.png
 │       ├── Result.png
-│       ├── 2D_thioridazine.png
-│       └── 3D_thioridazine.png
+│       ├── 2D_Thioridazine.png
+│       └── 3D_Thioridazine.png
 │
 ├── Epitope/
 │   │
 │   ├── InhA_protein/
-│   │   ├── raw_output.csv
-│   │   ├── epitope_score.fasta
+│   │   ├── Raw_output.csv
+│   │   ├── Epitope_score.fasta
 │   │   ├── Result.png
 │   │   │
 │   │   └── Allergenicity/
@@ -184,8 +184,8 @@ tb-dual-target-pipeline/
 │   │       └── Result_GGALGEE.png
 │   │
 │   ├── Rv1258c_protein/
-│   │   ├── raw_output.csv
-│   │   ├── epitope_scores.fasta
+│   │   ├── Raw_output.csv
+│   │   ├── Epitope_scores.fasta
 │   │   ├── Result.png
 │   │   │
 │   │   └── Allergenicity/
@@ -206,9 +206,9 @@ tb-dual-target-pipeline/
 ## <a id="pipeline-overview"></a>🔄 Pipeline Overview 
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[Target Selection<br/>InhA · DprE1 · Rv1258c] --> B[Molecular Docking<br/>Drug Repurposing]
-    A --> C[IEDB Known-Epitope Search]
+    A --> C[IEDB<br/>Known-Epitope Search]
     C --> D[BepiPred-3.0<br/>B-Cell Epitope Prediction]
     D --> E[VaxiJen<br/>Antigenicity]
     E --> F[AllerTOP + AllerCatPro 2.0<br/>Allergenicity]
