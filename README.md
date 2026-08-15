@@ -27,11 +27,11 @@
 - <a href="#pipeline-overview">Pipeline Overview</a>
 - <a href="#part-1-drug-repurposing-molecular-docking">Part 1: Drug Repurposing — Molecular Docking</a>
 - <a href="#part-2-iedb-known-epitope-search">Part 2: IEDB Known-Epitope Search</a>
-- <a href="#part-3-b-cell-epitope-prediction-bepipred-30">Part 3: B-Cell Epitope Prediction — BepiPred-3.0</a>
-- <a href="#part-4-antigenicity-vaxijen">Part 4: Antigenicity — VaxiJen</a>
-- <a href="#part-5-allergenicity-allertop--allercatpro-20">Part 5: Allergenicity — AllerTOP & AllerCatPro 2.0</a>
-- <a href="#part-6-toxicity-csm-toxin">Part 6: Toxicity — CSM-Toxin</a>
-- <a href="#part-7-conservation-blastp">Part 7: Conservation — BLASTp</a>
+- <a href="#A-b-cell-epitope-prediction-bepipred-30">A: B-Cell Epitope Prediction — BepiPred-3.0</a>
+- <a href="#B-antigenicity-vaxijen">B: Antigenicity — VaxiJen</a>
+- <a href="#C-allergenicity-allertop--allercatpro-20">C: Allergenicity — AllerTOP & AllerCatPro 2.0</a>
+- <a href="#D-toxicity-csm-toxin">D: Toxicity — CSM-Toxin</a>
+- <a href="#E-conservation-blastp">E: Conservation — BLASTp</a>
 - <a href="#final-results">Final Results</a>
 - <a href="#key-finding">Key Finding</a>
 - <a href="#limitations">Limitations</a>
@@ -198,7 +198,7 @@ tb-dual-target-pipeline/
 
 ---
 
-## 🔄 Pipeline Overview
+## <a id="pipeline-overview"></a>🔄 Pipeline Overview 
 
 ```mermaid
 flowchart TD
@@ -247,7 +247,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a id="part-3-b-cell-epitope-prediction-bepipred-30"></a>🧫 Part 3: B-Cell Epitope Prediction — BepiPred-3.0
+## <a id="A-b-cell-epitope-prediction-bepipred-30"></a>🧫 A: B-Cell Epitope Prediction — BepiPred-3.0
 
 **Threshold:** 0.1512 (default) | **Score used:** raw `BepiPred-3.0 score` | **Rule:** strict consecutive residues ≥5 aa | **Verification:** cross-checked against official server FASTA — 0 mismatches (InhA 269/269, Rv1258c 419/419)
 
@@ -263,7 +263,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a id="part-4-antigenicity-vaxijen"></a>🧪 Part 4: Antigenicity — VaxiJen
+## <a id="B-antigenicity-vaxijen"></a>🧪 B: Antigenicity — VaxiJen
 
 **Model:** Bacteria | **Threshold:** 0.5
 
@@ -278,7 +278,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a id="part-5-allergenicity-allertop--allercatpro-20"></a>🌾 Part 5: Allergenicity — AllerTOP & AllerCatPro 2.0
+## <a id="C-allergenicity-allertop--allercatpro-20"></a>🌾 C: Allergenicity — AllerTOP & AllerCatPro 2.0
 
 | Epitope | AllerTOP v2.0 | AllerCatPro 2.0 (E<0.001) | Final |
 |---|---|---|---|
@@ -290,7 +290,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a id="part-6-toxicity-csm-toxin"></a>☠️ Part 6: Toxicity — CSM-Toxin
+## <a id="D-toxicity-csm-toxin"></a>☠️ D: Toxicity — CSM-Toxin
 
 **Threshold:** 0.5
 
@@ -304,7 +304,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a id="part-7-conservation-blastp"></a>🌍 Part 7: Conservation — BLASTp
+## <a id="E-conservation-blastp"></a>🌍 E: Conservation — BLASTp
 
 | Epitope | Identity | E-value | Combined Members |
 |---|---|---|---|
