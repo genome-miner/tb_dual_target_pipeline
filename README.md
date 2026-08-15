@@ -2,7 +2,7 @@
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:1A2980,100:26D0CE&height=15&section=header&width=2000"/>
 </p>
 
-# 🧬 TB-DualTarget: Integrated Computational Pipeline for Drug Repurposing and B-Cell Vaccine Epitope Prediction in *Mycobacterium tuberculosis*
+## 🧬 TB-DualTarget: Integrated Computational Pipeline for Drug Repurposing and B-Cell Vaccine Epitope Prediction in *Mycobacterium tuberculosis*
 
 ### Dual-Purpose Target Discovery via Molecular Docking, Immunoinformatics, and Cross-Database Validation
 
@@ -336,3 +336,31 @@ AutoDock Vina · Discovery Studio Visualizer · UCSF ChimeraX · IEDB · BepiPre
 ## <a id="license"></a>📄 License
 
 This project is licensed under the [MIT License](https://github.com/genome-miner/tb_dual_target_pipeline/blob/main/LICENSE).
+
+---
+
+## <a id="author--contact"></a>👨‍💻 Author & Contact
+
+**Sana Aziz Sial**  
+Biotechnologist and Bioinformatician
+- 🎓 [University of Veterinary and Animal Sciences](https://www.uvas.edu.pk/)
+- 📧 [Email](sanaazizsial@gmail.com)
+- 🐙 [GitHub](https://github.com/genome-miner)
+- 🔗 [LinkedIn](in/sana-aziz-sial-73b189265)
+
+
+---
+
+<div align="center">
+
+## ⭐ Support the Project
+
+_If you found this repository useful, consider giving it a **star** on GitHub._
+
+_Thank you for visiting!_
+</div>
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:1A2980,100:26D0CE&height=15&section=header&width=2000"/>
+</p>
+
