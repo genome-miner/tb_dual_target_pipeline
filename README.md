@@ -335,4 +335,4 @@ AutoDock Vina · Discovery Studio Visualizer · UCSF ChimeraX · IEDB · BepiPre
 
 ## <a id="license"></a>📄 License
 
-This project is licensed under the [MIT License](https://github.com/genome-miner/epitope-analysis-and-prediction/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/genome-miner/tb_dual_target_pipeline/blob/main/LICENSE).
