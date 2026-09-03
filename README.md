@@ -1,4 +1,4 @@
-<p align="center">
+<img width="3223" height="123" alt="image" src="https://github.com/user-attachments/assets/54b8fd34-dbd0-4f9a-b632-974a0a37cce5" /><p align="center">
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:1A2980,100:26D0CE&height=15&section=header&width=2000"/>
 </p>
 
@@ -26,7 +26,8 @@
 - <a href="#repository-structure">Repository Structure</a>
 - <a href="#pipeline-overview">Pipeline Overview</a>
 - <a href="#tools--databases">Tools & Databases</a>
-- <a href="#part-1-drug-repurposing-molecular-docking">Part 1: Drug Repurposing — Molecular Docking</a>
+- <a href="#part-1-drug-repurposing-molecular-docking">Part 1: Drug Repurposing: Molecular Docking</a>
+- <a href="#molecular-simulation_Rv1258">Molecular Simulation Results (Rv1258)</a>
 - <a href="#part-2-vaccine-target-identification">Part 2: Vaccine Target Identification</a>
   - <a href="#part-2-a-iedb-known-epitope-search">A: IEDB Known-Epitope Search</a>
   - <a href="#part-2-b-cell-epitope-prediction-bepipred-30">B: Epitope Prediction — BepiPred-3.0</a>
@@ -161,23 +162,33 @@ tb-dual-target-pipeline/
 │   │       ├── 2D_Disulfiram.png
 │   │       └── 3D_Disulfiram.png
 │   │
-│   └── Rv1258c_docking/
-│       ├── Rv1258c_Thioridazine_Docked.pdb
-│       ├── Thioridazine_Rv1258c_out.pdbqt
-│       ├── Thioridazine_minimized.pdbqt
-│       ├── Rv1258c_prepared.pdbqt
-│       ├── Docking.png
-│       ├── Result.png
-│       ├── 2D_Thioridazine.png
-│       └── 3D_Thioridazine.png
+├── Rv1258c_docking/
+│   ├── Rv1258c_Thioridazine_Docked.pdb
+│   ├── Thioridazine_Rv1258c_out.pdbqt
+│   ├── Thioridazine_minimized.pdbqt
+│   ├── Rv1258c_prepared.pdbqt
+│   ├── Docking.png
+│   ├── Result.png
+│   ├── 2D_Thioridazine.png
+│   ├── 3D_Thioridazine.png
+│   └── Simulation/
+│       ├── Interaction_energy.png
+│       ├── Distance.png
+│       ├── rmsd_ca.png
+│       ├── rmsd_dist.png
+│       ├── radius_gyration.png
+│       ├── radius_gyration_dist.png
+│       ├── RMSF.png
+│       ├── 2D_RMSD.png
+│       ├── PCA.png
+│       ├── PC1_PC2.png
+│       └── Pearson's_correlation.png
 │
 ├── Epitope/
-│   │
 │   ├── InhA_protein/
 │   │   ├── Raw_output.csv
 │   │   ├── Epitope_score.fasta
 │   │   ├── Result.png
-│   │   │
 │   │   └── Allergenicity/
 │   │       ├── InhA_AllerCatPro2_QTGMGIN.csv
 │   │       ├── Result_QTGMGIN.png
@@ -188,7 +199,6 @@ tb-dual-target-pipeline/
 │   │   ├── Raw_output.csv
 │   │   ├── Epitope_scores.fasta
 │   │   ├── Result.png
-│   │   │
 │   │   └── Allergenicity/
 │   │       ├── GKPHHTSRPQ_AllerCatPro2_prediction.csv
 │   │       └── Result_GKPHHTSRPQ.png
@@ -198,6 +208,7 @@ tb-dual-target-pipeline/
 │
 ├── README.md
 └── LICENSE
+
 ```
 
 </details>
@@ -233,7 +244,7 @@ flowchart LR
 
 ---
 
-## <a id="part-1-drug-repurposing-molecular-docking"></a>💊 Part 1: Drug Repurposing — Molecular Docking
+## <a id="part-1-drug-repurposing-molecular-docking"></a>💊 Part 1: Drug Repurposing: Molecular Docking
 
 **Tool:** AutoDock Vina | **Validation:** Discovery Studio Visualizer (2D/3D), UCSF ChimeraX (H-bond/clash verification)
 
@@ -250,6 +261,23 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 | Thioridazine | Rv1258c | −8.2 | Carbon-H-bond, Pi-Sigma, Pi-Alkyl (ALA48/110/113/114, ILE27, THR51, LEU55, TYR357) | **Flagship** |
 
 **Interpretation:** Benchmark drugs anchored to NADH as expected, validating the protocol. Metformin bound both InhA and DprE1 with affinities comparable to the benchmarks, forming plausible cofactor-directed interactions though its therapeutic relevance needs experimental validation given metformin's very different established pharmacology. Disulfiram's DprE1 result aligns with its documented role as a covalent DprE1 inhibitor, supporting DprE1's druggability. Thioridazine's InhA result was numerically strong but structurally unsupported (0 H-bonds) and excluded; its Rv1258c result was the study's strongest and most structurally coherent finding.
+
+---
+
+## <a id="#molecular-simulation_Rv1258"></a> Molecular Simulation Results (Rv1258)
+Preliminary 5-ns MD simulation confirms binding stability of the flagship thioridazine-Rv1258c complex, supporting docking predictions.
+
+### Summary of Key Metrics
+
+| Metric | Value / Range | Interpretation |
+|---|---|---|
+| Protein RMSD (Cα) | ~1.0 → 3.5 Å (peak ~2 ns) → stabilizes ~2.5 Å | Initial adjustment, then stable |
+| Radius of Gyration | 21.6–22.2 Å | Compact, no unfolding |
+| Interaction Energy (Total) | ~ −40 kcal/mol | Favorable, stable binding |
+| van der Waals Energy | ~ −35 to −40 kcal/mol | Dominant contribution |
+| Electrostatic Energy | ~0 to −5 kcal/mol | Minor contribution |
+| Ligand–Site Distance | 3.5 → up to 9 Å (transient) → ~6 Å | Transient repositioning, then stable |
+| RMSF (core residues) | Mostly < 2 Å | Stable core; termini more flexible |
 
 ---
 
