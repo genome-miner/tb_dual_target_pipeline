@@ -46,7 +46,7 @@
 
 ## <a id="project-overview"></a>📖 Project Overview
 
-Tuberculosis remains a leading global infectious killer, with rising multidrug-resistant (MDR) strains threatening existing treatments. This project applies an integrated computational pipeline—molecular docking + immunoinformatics—to three M. tuberculosis proteins (**InhA, DprE1, and Rv1258c**) to test whether a target can be both druggable and immunogenic, making it a candidate for combined drug and vaccine development.
+Tuberculosis remains a leading global infectious killer, with rising multidrug-resistant (MDR) strains threatening existing treatments. This project applies an integrated computational pipeline, molecular docking & immunoinformatics to test three _M. tuberculosis_ proteins (**InhA, DprE1, and Rv1258c**) to see whether a target can be both druggable and immunogenic, making it a candidate for combined drug and vaccine development.
 
 ---
 
@@ -246,10 +246,10 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 | Metformin | InhA + NADH | −5.0 | 2 H-bonds (NADH); Charge–Charge | Repurposing |
 | Metformin | DprE1 + FAD | −5.2 | H-bond (TYR314); Carbon-H-bond (FAD); clash (LYS134) | Repurposing |
 | Disulfiram | DprE1 + FAD | −5.2 | Alkyl/Pi-Alkyl network (LEU363/317, FAD, HIS132, LYS134, VAL365) | Repurposing |
-| Thioridazine | InhA + NADH | −7.5 | 0 H-bonds, 0 clashes (ChimeraX) | ❌ Excluded |
-| Thioridazine | Rv1258c | −8.2 | Carbon-H-bond, Pi-Sigma, Pi-Alkyl (ALA48/110/113/114, ILE27, THR51, LEU55, TYR357) | ✅ **Flagship** |
+| Thioridazine | InhA + NADH | −7.5 | 0 H-bonds, 0 clashes (ChimeraX) | Excluded |
+| Thioridazine | Rv1258c | −8.2 | Carbon-H-bond, Pi-Sigma, Pi-Alkyl (ALA48/110/113/114, ILE27, THR51, LEU55, TYR357) | **Flagship** |
 
-**Interpretation:** Benchmark drugs anchored to NADH as expected, validating the protocol. Metformin bound both InhA and DprE1 with affinities comparable to the benchmarks, forming plausible cofactor-directed interactions — though its therapeutic relevance needs experimental validation given metformin's very different established pharmacology. Disulfiram's DprE1 result aligns with its documented role as a covalent DprE1 inhibitor, supporting DprE1's druggability. Thioridazine's InhA result was numerically strong but structurally unsupported (0 H-bonds) and excluded; its Rv1258c result was the study's strongest and most structurally coherent finding.
+**Interpretation:** Benchmark drugs anchored to NADH as expected, validating the protocol. Metformin bound both InhA and DprE1 with affinities comparable to the benchmarks, forming plausible cofactor-directed interactions though its therapeutic relevance needs experimental validation given metformin's very different established pharmacology. Disulfiram's DprE1 result aligns with its documented role as a covalent DprE1 inhibitor, supporting DprE1's druggability. Thioridazine's InhA result was numerically strong but structurally unsupported (0 H-bonds) and excluded; its Rv1258c result was the study's strongest and most structurally coherent finding.
 
 ---
 
@@ -267,7 +267,7 @@ A five-step screening pipeline was applied to identify, then validate, candidate
 | DprE1 | 0 | 0 | 0 |
 | Rv1258c | 0 | 0 | 0 |
 
-**Interpretation:** InhA has one experimentally validated T-cell epitope (RLPAKAPLL, supported by 21 MHC ligand binding assays and 2 solved crystal structures) but no B-cell epitope data — motivating this project's B-cell prediction. DprE1 and Rv1258c have zero IEDB entries of any kind, confirming their predictions here are genuinely novel.
+**Interpretation:** InhA has one experimentally validated T-cell epitope (RLPAKAPLL, supported by 21 MHC ligand binding assays and 2 solved crystal structures) but no B-cell epitope data, motivating this project's B-cell prediction. DprE1 and Rv1258c have zero IEDB entries of any kind.
 
 ---
 
@@ -293,10 +293,10 @@ A five-step screening pipeline was applied to identify, then validate, candidate
 
 | Protein | Epitope | Score | Verdict |
 |---|---|---|---|
-| InhA | QTGMGIN | 1.4227 | ✅ Antigen |
-| InhA | GGALGEE | 0.9748 | ✅ Antigen |
-| Rv1258c | GKPHHTSRPQ | 0.8944 | ✅ Antigen |
-| Rv1258c | DIDRPVGS | −0.5358 | ❌ Non-antigen |
+| InhA | QTGMGIN | 1.4227 | Antigen |
+| InhA | GGALGEE | 0.9748 | Antigen |
+| Rv1258c | GKPHHTSRPQ | 0.8944 | Antigen |
+| Rv1258c | DIDRPVGS | −0.5358 | Non-antigen |
 
 **Interpretation:** 3 of 4 candidates confirmed antigenic well above threshold; DIDRPVGS was excluded from further screening.
 
@@ -354,7 +354,7 @@ A five-step screening pipeline was applied to identify, then validate, candidate
 
 ## <a id="key-finding"></a>🌟 Key Finding
 
-**Rv1258c is this project's dual-purpose target:** strongest docking hit overall (thioridazine, −8.2 kcal/mol, structurally validated) **and** a conserved, antigenic, non-allergenic, non-toxic novel B-cell epitope (GKPHHTSRPQ) absent from IEDB — simultaneously druggable and vaccine-relevant.
+**Rv1258c is this project's dual-purpose target:** the strongest docking hit overall (thioridazine, −8.2 kcal/mol, structurally validated) **and** a conserved, antigenic, non-allergenic, non-toxic novel B-cell epitope (GKPHHTSRPQ) absent from IEDB, simultaneously druggable and vaccine-relevant.
 
 ---
 
@@ -362,7 +362,7 @@ A five-step screening pipeline was applied to identify, then validate, candidate
 
 - In silico predictions only; no experimental (wet-lab) validation performed
 - Small sample size (3 proteins), appropriate for mini-project scope
-- Docking scores alone are not proof of binding — demonstrated directly by the excluded Thioridazine–InhA result
+- Docking scores alone are not proof of binding, demonstrated directly by the excluded Thioridazine–InhA result
 - Metformin (InhA/DprE1) and disulfiram (DprE1) pairings are novel hypotheses, not literature-confirmed mechanisms
 
 ---
