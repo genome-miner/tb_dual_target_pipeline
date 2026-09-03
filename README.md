@@ -264,7 +264,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 | Thioridazine | InhA + NADH | −7.5 | 0 H-bonds, 0 clashes (ChimeraX) | Excluded |
 | Thioridazine | Rv1258c | −8.2 | Carbon-H-bond, Pi-Sigma, Pi-Alkyl (ALA48/110/113/114, ILE27, THR51, LEU55, TYR357) | **Flagship** |
 
-**Interpretation:** Benchmark drugs anchored to NADH as expected, validating the protocol. Metformin bound both InhA and DprE1 with affinities comparable to the benchmarks, forming plausible cofactor-directed interactions though its therapeutic relevance needs experimental validation given metformin's very different established pharmacology. Disulfiram's DprE1 result aligns with its documented role as a covalent DprE1 inhibitor, supporting DprE1's druggability. Thioridazine's InhA result was numerically strong but structurally unsupported (0 H-bonds) and excluded; its Rv1258c result was the study's strongest and most structurally coherent finding.
+**Interpretation:** Benchmark drugs showed expected interactions with the NADH cofactor, providing a reference point for evaluating the repurposing candidates. Metformin bound both InhA and DprE1 with affinities comparable to the benchmarks, forming plausible cofactor-directed interactions, though its therapeutic relevance would require experimental validation given metformin's different established pharmacology. Disulfiram's DprE1 result is consistent with its documented role as a covalent DprE1 inhibitor, supporting DprE1's relevance as a druggable target. Thioridazine's InhA result was numerically strong but structurally unsupported (0 H-bonds) and was excluded; its Rv1258c result was the strongest and most structurally coherent docking finding in this project.
 
 ---
 
@@ -392,7 +392,7 @@ A five-step screening pipeline was applied to identify, then validate, candidate
 
 ## <a id="key-finding"></a>🌟 Key Finding
 
-**Rv1258c is this project's dual-purpose target:** the strongest docking hit overall (thioridazine, −8.2 kcal/mol, structurally validated) **and** a conserved, antigenic, non-allergenic, non-toxic novel B-cell epitope (GKPHHTSRPQ) absent from IEDB, simultaneously druggable and vaccine-relevant.
+Rv1258c emerged as this project's strongest dual-purpose target: it produced the strongest docking result overall (thioridazine, −8.2 kcal/mol) and contained a conserved, antigenic, non-allergenic, and non-toxic predicted B-cell epitope (GKPHHTSRPQ) absent from IEDB. InhA also demonstrated dual-purpose potential through metformin docking and two retained predicted B-cell epitopes (QTGMGIN and GGALGEE), while Rv1258c stood out as the strongest overall integrative candidate.
 
 ---
 
