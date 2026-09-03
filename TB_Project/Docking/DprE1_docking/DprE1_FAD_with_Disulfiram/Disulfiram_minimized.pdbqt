@@ -1,0 +1,48 @@
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S_1  and  S_2 
+REMARK    2  A    between atoms: S_1  and  C_15 
+REMARK    3  A    between atoms: S_2  and  C_16 
+REMARK    4  A    between atoms: N_5  and  C_7 
+REMARK    5  A    between atoms: N_5  and  C_8 
+REMARK    6  A    between atoms: N_5  and  C_15 
+REMARK    7  A    between atoms: N_6  and  C_9 
+REMARK    8  A    between atoms: N_6  and  C_10 
+REMARK    9  A    between atoms: N_6  and  C_16 
+ROOT
+ATOM      1  S   UNK     0       9.922   0.606  -0.897  1.00  0.00    -0.020 SA
+ENDROOT
+BRANCH   1   2
+ATOM      2  S   UNK     0       8.240  -0.606  -0.897  1.00  0.00    -0.020 SA
+BRANCH   2   3
+ATOM      3  C   UNK     0       6.859   0.296  -0.171  1.00  0.00     0.147 C 
+ATOM      4  S   UNK     0       7.015   1.897   0.354  1.00  0.00    -0.052 SA
+BRANCH   3   5
+ATOM      5  N   UNK     0       5.606  -0.443  -0.146  1.00  0.00    -0.367 N 
+BRANCH   5   6
+ATOM      6  C   UNK     0       5.691  -1.916  -0.050  1.00  0.00     0.120 C 
+ATOM      7  C   UNK     0       4.458  -2.786   0.130  1.00  0.00     0.026 C 
+ENDBRANCH   5   6
+BRANCH   5   8
+ATOM      8  C   UNK     0       4.375   0.309   0.223  1.00  0.00     0.120 C 
+ATOM      9  C   UNK     0       2.999  -0.243  -0.134  1.00  0.00     0.026 C 
+ENDBRANCH   5   8
+ENDBRANCH   3   5
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1  10
+ATOM     10  C   UNK     0      11.303  -0.297  -0.171  1.00  0.00     0.147 C 
+ATOM     11  S   UNK     0      11.147  -1.897   0.355  1.00  0.00    -0.052 SA
+BRANCH  10  12
+ATOM     12  N   UNK     0      12.555   0.444  -0.146  1.00  0.00    -0.367 N 
+BRANCH  12  13
+ATOM     13  C   UNK     0      12.470   1.915  -0.051  1.00  0.00     0.120 C 
+ATOM     14  C   UNK     0      13.703   2.786   0.130  1.00  0.00     0.026 C 
+ENDBRANCH  12  13
+BRANCH  12  15
+ATOM     15  C   UNK     0      13.787  -0.310   0.222  1.00  0.00     0.120 C 
+ATOM     16  C   UNK     0      15.163   0.244  -0.134  1.00  0.00     0.026 C 
+ENDBRANCH  12  15
+ENDBRANCH  10  12
+ENDBRANCH   1  10
+TORSDOF 9
