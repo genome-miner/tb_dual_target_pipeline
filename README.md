@@ -1,4 +1,4 @@
-<img width="3223" height="123" alt="image" src="https://github.com/user-attachments/assets/54b8fd34-dbd0-4f9a-b632-974a0a37cce5" /><p align="center">
+<p align="center">
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:1A2980,100:26D0CE&height=15&section=header&width=2000"/>
 </p>
 
@@ -27,7 +27,7 @@
 - <a href="#pipeline-overview">Pipeline Overview</a>
 - <a href="#tools--databases">Tools & Databases</a>
 - <a href="#part-1-drug-repurposing-molecular-docking">Part 1: Drug Repurposing: Molecular Docking</a>
-- <a href="#molecular-simulation_Rv1258">Molecular Simulation Results (Rv1258)</a>
+- <a href="#molecular-simulation-rv1258">Molecular Simulation Results (Rv1258)</a>
 - <a href="#part-2-vaccine-target-identification">Part 2: Vaccine Target Identification</a>
   - <a href="#part-2-a-iedb-known-epitope-search">A: IEDB Known-Epitope Search</a>
   - <a href="#part-2-b-cell-epitope-prediction-bepipred-30">B: Epitope Prediction — BepiPred-3.0</a>
@@ -264,20 +264,20 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 
 ---
 
-## <a id="#molecular-simulation_Rv1258"></a> Molecular Simulation Results (Rv1258)
+## <a id="molecular-simulation-rv1258"></a> Molecular Simulation Results (Rv1258)
 Preliminary 5-ns MD simulation confirms binding stability of the flagship thioridazine-Rv1258c complex, supporting docking predictions.
 
 ### Summary of Key Metrics
 
 | Metric | Value / Range | Interpretation |
 |---|---|---|
-| Protein RMSD (Cα) | ~1.0 → 3.5 Å (peak ~2 ns) → stabilizes ~2.5 Å | Initial adjustment, then stable |
-| Radius of Gyration | 21.6–22.2 Å | Compact, no unfolding |
-| Interaction Energy (Total) | ~ −40 kcal/mol | Favorable, stable binding |
-| van der Waals Energy | ~ −35 to −40 kcal/mol | Dominant contribution |
-| Electrostatic Energy | ~0 to −5 kcal/mol | Minor contribution |
-| Ligand–Site Distance | 3.5 → up to 9 Å (transient) → ~6 Å | Transient repositioning, then stable |
-| RMSF (core residues) | Mostly < 2 Å | Stable core; termini more flexible |
+| Protein RMSD (Cα) | Rises from 1.0 to 3.5 Å by 2 ns, then settles near 2.5 Å | Early structural adjustment followed by stability |
+| Radius of Gyration | 21.6 to 22.2 Å | Protein remains compact throughout |
+| Interaction Energy (Total) | Approximately -40 kcal/mol | Consistent, favorable binding |
+| Van der Waals Energy | -35 to -40 kcal/mol | Main driver of the interaction |
+| Electrostatic Energy | 0 to -5 kcal/mol | Minor contribution to binding |
+| Ligand-Site Distance | Starts near 3.5 Å, briefly rises to 9 Å, then stabilizes around 6 Å | Temporary repositioning, then stable association |
+| RMSF (core residues) | Mostly below 2 Å | Stable core with flexible terminal regions |
 
 ---
 
