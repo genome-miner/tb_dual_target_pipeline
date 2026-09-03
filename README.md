@@ -265,7 +265,7 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 ---
 
 ## <a id="molecular-simulation-rv1258"></a> Molecular Simulation Results (Rv1258)
-Preliminary 5-ns MD simulation confirms binding stability of the flagship thioridazine-Rv1258c complex, supporting docking predictions.
+*Preliminary 5-ns MD simulation confirms binding stability of the flagship thioridazine-Rv1258c complex, supporting docking predictions.*
 
 ### Summary of Key Metrics
 
