@@ -279,6 +279,13 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 | Ligand-Site Distance | Starts near 3.5 Å, briefly rises to 9 Å, then stabilizes around 6 Å | Temporary repositioning, then stable association |
 | RMSF (core residues) | Mostly below 2 Å | Stable core with flexible terminal regions |
 
+<div align="center">
+  <img src="https://github.com/genome-miner/tb_dual_target_pipeline/blob/main/TB_Project/Docking/Rv1258c_docking/Simulation/PCA.png" alt="PCA" width="48%" style="margin-right: 6px;">
+  <img src="https://github.com/genome-miner/tb_dual_target_pipeline/blob/main/TB_Project/Docking/Rv1258c_docking/Simulation/Distance.png" alt="Distance" width="48%">
+</div>
+
+<br clear="both">
+
 ---
 
 ## <a id="part-2-vaccine-target-identification"></a>💉 Part 2: Vaccine Target Identification
