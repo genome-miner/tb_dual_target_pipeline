@@ -59,6 +59,10 @@ Tuberculosis remains a leading global infectious killer, with rising multidrug-r
 | DprE1 | P9WJF1 | Decaprenylphosphoryl-β-D-ribose oxidase (cell wall biosynthesis) | FAD |
 | Rv1258c | P9WJX9 | Multidrug efflux MFS transporter (Tap) | — |
 
+<div align="center">
+  <img src="https://github.com/genome-miner/tb_dual_target_pipeline/blob/main/TB_Project/Docking/InhA_docking/InhA_NADH_with_Ethionamide/Docking.png" alt="Docking" width="500">
+</div>
+
 ---
 
 ## <a id="repository-structure"></a>📁 Repository Structure
@@ -280,11 +284,10 @@ Isoniazid and ethionamide (known InhA inhibitors) were docked first as benchmark
 | RMSF (core residues) | Mostly below 2 Å | Stable core with flexible terminal regions |
 
 <div align="center">
-  <img src="https://github.com/genome-miner/tb_dual_target_pipeline/blob/main/TB_Project/Docking/Rv1258c_docking/Simulation/PCA.png" alt="PCA" width="48%" style="margin-right: 6px;">
-  <img src="https://github.com/genome-miner/tb_dual_target_pipeline/blob/main/TB_Project/Docking/Rv1258c_docking/Simulation/Distance.png" alt="Distance" width="48%">
+  <img src="https://github.com/genome-miner/tb_dual_target_pipeline/blob/main/TB_Project/Docking/Rv1258c_docking/Simulation/PCA.png" alt="PCA" width="500">
+  <div style="height: 5px;"></div>
+  <img src="https://github.com/genome-miner/tb_dual_target_pipeline/blob/main/TB_Project/Docking/Rv1258c_docking/Simulation/Distance.png" alt="Distance" width="500">
 </div>
-
-<br clear="both">
 
 ---
 
